@@ -1,9 +1,5 @@
 # Professional-README-Generator---Challenge-9
 
-# Node.js Challenge: Professional README Generator
-
-
-
 ### Screenshot
 <img src = "demo/demo.gif" alt = "generator preview">
 
