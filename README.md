@@ -1,19 +1,25 @@
 # Professional-README-Generator---Challenge-9
 
+### Description
+
+Given starter code, I've restructured a simple README.md Generator application that allows a user to place data into a README.md template. I have done this by creating multiple JavaScript files that are linked to each other mainly using node.js and using inquirer and util packages to dynamically create the template.
+
+
 ### Screenshot
 <img src = "demo/demo.gif" alt = "generator preview">
+
 
 ### Link to Demo
 https://drive.google.com/file/d/1zDcnmO8Lpp_u4JjIjc_mEbYuVT9fWe-3/view
 
 ### What User Asked
-```
+
 AS A developer
 I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
-```
+
 ### Accepted Criteria
-```
+
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
@@ -29,10 +35,6 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
-```
 
 
-### Application Contents/Description
-``
-Given passed down starter code, I've refactored a simple README.md Generator application that allows a user to place their data into a README.md template. I have done this by creating multiple JavaScript files that are linked to each other mainly using node.js and using inquirer and util packages to dynamically create the template.
-``
+##
