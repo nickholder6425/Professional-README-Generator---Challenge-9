@@ -1,5 +1,5 @@
 
-  <h1 align='center'>README.md Generator</h1>
+  <h1 text-align='center'>README.md Generator</h1>
   
   ## Description 
     dynamically generates README.md file
@@ -23,7 +23,7 @@
     N/A  
 
   ## License
-    This application is covered by Mozilla license.
+    N/A
 
   ## Features
     Javascript, node.js, json
