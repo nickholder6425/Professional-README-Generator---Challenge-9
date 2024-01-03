@@ -1,4 +1,4 @@
-# Professional-README-Generator-Challenge-9
+# Professional README Generator
 
 # README Generator
 
@@ -26,13 +26,11 @@ After typing 'npm start', you will be followed by a serious of questions which w
 ## License
 This project is licensed under the [None](https://opensource.org/licenses/None) License - see the [LICENSE](LICENSE) file for details.
 
-## Feature(s)
-Generate a README
-
 ## Credits
 - [Inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4#examples)
 - [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
-- [Start Code](https://github.com/coding-boot-camp/potential-enigma) (https://github.com/Develepor-Dan/Professional-README-Generator)
+- [Starter Code](https://github.com/coding-boot-camp/potential-enigma)
+- [Starter Code](https://github.com/Develepor-Dan/Professional-README-Generator)
 
 ## Deployment
 [GitHub Repository](https://github.com/Develepor-Dan/Professional-README-Generator)
