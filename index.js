@@ -1,78 +1,89 @@
-// Dependencies needed for this application
-const inquirer = require("inquirer");
-const fs = require("fs");
-const util = require("util");
+// TODO: Include packages needed for this application
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown'); 
 
-// Links questions to README template
-const ReadMeTemplate = require("./src/ReadMeTemplate");
+// TODO: Create an array of questions for user input
+const questions = [
+  {
+    type: 'input',
+    name: 'title',
+    message: 'What is the title of your project?',
+  },
+  {
+    type: 'input',
+    name: 'description',
+    message: 'Provide a brief description of your project:',
+  },
+  {
+    type: 'input',
+    name: 'motivation',
+    message: 'What was your motivation?',
+  },
+  {
+    type: 'input',
+    name: 'reason',
+    message: 'What was the reason for this project?',
+  },
+  {
+    type: 'input',
+    name: 'problem',
+    message: 'What problem does this project solve?',
+  },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'Choose a license for your project:',
+    choices: ['MIT', 'GNU GPLv3', 'Apache 2.0', 'ISC', 'None'],
+  },
+  {
+    type: 'input',
+    name: 'installation',
+    message: 'Provide installation instructions:',
+  },
+  {
+    type: 'input',
+    name: 'usage',
+    message: 'Provide instructions and examples:',
+  },
+  {
+    type: 'input',
+    name: 'credits',
+    message: 'List collaborators and/or third-party assets:',
+  },
+  {
+    type: 'input',
+    name: 'features',
+    message: 'If there are various features, list them here:',
+  },
+  // Input for 'how to contribute'
+  {
+    type: 'input',
+    name: 'author',
+    message: 'What is your name?',
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What is your email address?',
+  },
+];
 
-// Creates a function to write README file
-const createFile = util.promisify(fs.writeFile);
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) =>
+    err ? console.error(err) : console.log('README file generated successfully!')
+  );
+  console.log('README file is being created');
+}
 
-//Creates an array of questions for user input
-const promptUser = () => {
-    return inquirer.prompt([
-        {
-            type:'input',
-            name:'username',
-            message:'Enter GitHub username:'
-        },
-        {
-            type:'input',
-            name:'projectTitle',
-            message:'What is the project title?'
-        },
-        {
-            type:'input',
-            name:'description',
-            message:'Describe the project:'
-        },
-        {
-            type:'input',
-            name:'installation',
-            message:'What are the steps required to install your project?'
-        },
-        {
-            type:'input',
-            name:'usage',
-            message:'Provide instructions and examples for use. Include screenshots as needed:'
-        },
-        {
-            type:'input',
-            name:'credits',
-            message:'List your collaborators, if any. If none, skip or type "N/A":'
-        },
-        {
-            type:'list',
-            name:'license',
-            message:'Choose the license for this project:',
-            choices: ['GNU AGPL', 'GNU LGPL', 'Mozilla', 'Apache','MIT', 'Boost Software','The Unlicense']
-        },
-        {
-            type:'input',
-            name:'features',
-            message:'List project features/languages:'
-        },
-        {
-            type:'input',
-            name:'contributing',
-            message:'If you would like others to contribute to your app/package, add guidelines for how to do so. If not, skip or type "N/A":'
-        },
-    ])
-};
+// TODO: Create a function to initialize app
+function init() {
+  inquirer.prompt(questions).then((responses) => {
+    const markdownContent = generateMarkdown(responses);
+    writeToFile('README.md', markdownContent);
+  });
+}
 
-// Create a function to initialize app
-async function init() {
-    try {
-        const data = await promptUser();
-        const createContent = ReadMeTemplate(data);
-
-        await createFile('./sample/README.md', createContent);
-        console.log('Successfully created README.md');
-    } catch(err) {
-        console.log(err);
-    }
-};
-
-// Calls function to initialize app
+// Function call to initialize app
 init();
