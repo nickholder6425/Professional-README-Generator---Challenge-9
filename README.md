@@ -42,7 +42,9 @@
   - [Starter Code](https://github.com/Develepor-Dan/Professional-README-Generator)
   
   ## Deployment
-  [GitHub Repository]()
+  [GitHub Repository](https://github.com/nickholder6425/Professional-README-Generator---Challenge-9)
+
+  [URL](https://nickholder6425.github.io/Professional-README-Generator---Challenge-9/)
   
   ## Questions
   For questions about contribution about the project, please contact [Nick Holder](mailto:ngholder@hotmail.com).
