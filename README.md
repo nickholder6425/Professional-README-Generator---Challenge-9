@@ -1,7 +1,5 @@
 # Professional README Generator
   
-  [![License](https://img.shields.io/badge/License-None-brightgreen)
-  
   ## Description
   - Using starter code, I restructured a quick and professional README generator application.
   - Bootcamp challenge; hoped to create a useful tool that might help developers when creating a README.
@@ -23,6 +21,10 @@
   ## Usage
   ![demo of the project]()
   After typing 'npm start', you will be followed by a serious of questions which will help when generating your README. See Demo.
+  
+  ## License
+  ![License](https://img.shields.io/badge/License-None-brightgreen)
+
   
   ## Feature(s)
   Generate a README
