@@ -1,6 +1,6 @@
 # Professional README Generator
   
-  [![License](https://img.shields.io/badge/License-None-brightgreen.svg)](https://opensource.org/licenses/None)
+  [![License](https://img.shields.io/badge/License-None-brightgreen)
   
   ## Description
   - Using starter code, I restructured a quick and professional README generator application.
@@ -23,9 +23,6 @@
   ## Usage
   ![demo of the project]()
   After typing 'npm start', you will be followed by a serious of questions which will help when generating your README. See Demo.
-  
-  ## License
-  This project is licensed under the [None](https://opensource.org/licenses/None) License - see the [LICENSE](LICENSE) file for details.
   
   ## Feature(s)
   Generate a README
