@@ -13,7 +13,7 @@
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [Contributing](#contributing)
+  - [Credits](#credits)
   - [Tests](#tests)
   - [Questions](#questions)
   
@@ -41,6 +41,7 @@
   - [Starter Code](https://github.com/Develepor-Dan/Professional-README-Generator)
   
   ## Deployment
+
   [GitHub Repository](https://github.com/nickholder6425/Professional-README-Generator---Challenge-9)
 
   [URL](https://nickholder6425.github.io/Professional-README-Generator---Challenge-9/)
