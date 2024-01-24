@@ -25,7 +25,6 @@
   After typing 'npm start', you will be followed by a serious of questions which will help when generating your README. See Demo.
   
   ## License
-  
   This project is licensed under the [None](https://opensource.org/licenses/None) License - see the [LICENSE](LICENSE) file for details.
   
   ## Feature(s)
